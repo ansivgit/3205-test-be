@@ -6,12 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon",
-    "build": "./node_modules/.bin/esbuild ./src/app.ts --bundle --platform=node --outfile=./dist/index.js",
-    "db:model:user": "sequelize-cli model:generate --name UsersDB --attributes login:string,password:string,age:integer,isDeleted:boolean",
-    "db:model:group": "sequelize-cli model:generate --name GroupsDB --attributes name:string,permissions:Array",
-    "db:model:userGroup": "sequelize-cli model:generate --name UsersGroupsDB --attributes userId:string,groupId:string",
-    "db:migrate": "sequelize-cli db:migrate",
-    "db:seed": "sequelize-cli db:seed:all"
+    "build": "./node_modules/.bin/esbuild ./src/app.ts --bundle --platform=node --outfile=./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/ansivgit/3205-test-be/issues"
   },
-  "homepage": ".",
+  "homepage": "https://github.com/ansivgit/3205-test-be#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "esbuild": "0.17.15",
