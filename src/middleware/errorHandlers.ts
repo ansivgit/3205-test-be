@@ -8,7 +8,7 @@ export const notFoundHandler = (err: any, _: Request, res: Response, next: NextF
   res.status(404).send(err.message);
 };
 
-export const errorHandler = (err: any, _: Request, res: Response, next: NextFunction) => {
+export const errorHandler = (err: any, _: Request, res: Response) => {
   const status = err.statusCode || 500;
   const message = err.message || 'Something went wrong';
 
